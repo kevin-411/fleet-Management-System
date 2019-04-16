@@ -4,12 +4,12 @@ import javax.persistence.*;
 
 @Entity
 @Table(name ="tble_clients")
-public class Client extends User{
+public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     int id;
     String name;
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL)
     Booking bookingId;
     @OneToOne(cascade = CascadeType.ALL)
     User userId;

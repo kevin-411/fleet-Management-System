@@ -1,2 +1,2 @@
 ##Find way of doing away with duplicate code in Services. Perhaps a generic service and extending this?
-##Problems implementing the Bean interface, with type T not being resolved
+##Problems implementing inheritance
